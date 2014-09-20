@@ -1,15 +1,21 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Spawn.cs">
     <Files>
-      <File FileName="Assets\Scripts\Spawn.cs" Line="14" Column="63" />
-      <File FileName="Assets\Scripts\CameraJoystickRight.cs" Line="45" Column="4" />
+      <File FileName="Assets\Scripts\Spawn.cs" Line="14" Column="1" />
+      <File FileName="Assets\Scripts\CameraJoystickRight.cs" Line="49" Column="39" />
       <File FileName="Assets\Scripts\CameraJoystickLeft.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UnderWater.cs" Line="51" Column="1" />
+      <File FileName="Assets\Scripts\EnvironnementControl.cs" Line="82" Column="1" />
+      <File FileName="Assets\CNJoystick\Scripts\CNJoystick.cs" Line="110" Column="1" />
+      <File FileName="c:\Users\Ludovic\Documents\Unity\Unity\Assets\Scripts\Charactere Controller\FPSInputController.cs" Line="11" Column="13" />
+      <File FileName="Assets\CNJoystick\Scripts\MouseLook.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>energy.Evaluate(0.9f)</Value>
+          <Value>totalRotate.x</Value>
+          <Value>new Vector3(0.1f, 0f, 0f)</Value>
         </State>
       </Pad>
     </Pads>
@@ -18,9 +24,6 @@
     <BreakpointStore>
       <Breakpoint file="C:\Users\Ludovic\Documents\Unity\Unity\Assets\IA.cs" line="16" />
       <Breakpoint file="C:\Users\Ludovic\Documents\Unity\Unity\Assets\Spawn.cs" line="14" />
-      <Breakpoint file="C:\Users\Ludovic\Documents\Unity\Unity\Assets\Scripts\EnvironnementControl.cs" line="82" />
-      <Breakpoint file="C:\Users\Ludovic\Documents\Unity\Unity\Assets\Scripts\EnvironnementControl.cs" line="29" />
-      <Breakpoint file="C:\Users\Ludovic\Documents\Unity\Unity\Assets\Scripts\CameraJoystickRight.cs" line="49" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
@@ -34,5 +37,6 @@
     <Watch file="..\EcoSystem\Assets\UnderWater.cs" line="33" offsetX="637" offsetY="544" expression="gravity" liveUpdate="False" />
     <Watch file="..\EcoSystem\Assets\UnderWater.cs" line="44" offsetX="637" offsetY="731" expression="gravity" liveUpdate="False" />
     <Watch file="Assets\IA.cs" line="16" offsetX="429" offsetY="255" expression="agent" liveUpdate="False" />
+    <Watch file="Assets\Scripts\CameraJoystickRight.cs" line="49" offsetX="773" offsetY="816" expression="mainCamera.transform.rotation.x" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>
