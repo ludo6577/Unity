@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 12a849eca3f7a324da55f63fe86be1fe
+guid: 90b60d4763628184ea33bfc39a0439dc
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -12,8 +12,9 @@ ModelImporter:
     100012: Armature|S3
     100014: Armature|S4
     100016: Armature|S5
-    100018: //RootNode
-    100020: S1
+    100018: S1
+    100020: //RootNode
+    100022: Sun
     400000: Armature
     400002: Armature|Head
     400004: Armature|J1
@@ -23,16 +24,16 @@ ModelImporter:
     400012: Armature|S3
     400014: Armature|S4
     400016: Armature|S5
-    400018: //RootNode
-    400020: S1
+    400018: S1
+    400020: //RootNode
+    400022: Sun
     4300000: S1
     7400000: walkS1
     7400002: detectS1
     7400004: attackS1
     7400006: Armature|attackS1
     7400008: Armature|detectS1
-    7400010: Armature|PoseLib
-    7400012: Armature|walkS1
+    7400010: Armature|walkS1
     9500000: //RootNode
     11100000: //RootNode
     13700000: S1
@@ -56,7 +57,7 @@ ModelImporter:
       name: walkS1
       takeName: walkS1
       firstFrame: 0
-      lastFrame: 24
+      lastFrame: 22
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -97,6 +98,8 @@ ModelImporter:
       - path: Armature/Armature|Head/Armature|S1/Armature|S2/Armature|S3/Armature|S4/Armature|S5
         weight: 1
       - path: S1
+        weight: 1
+      - path: Sun
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -146,6 +149,8 @@ ModelImporter:
         weight: 1
       - path: S1
         weight: 1
+      - path: Sun
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
@@ -193,6 +198,8 @@ ModelImporter:
       - path: Armature/Armature|Head/Armature|S1/Armature|S2/Armature|S3/Armature|S4/Armature|S5
         weight: 1
       - path: S1
+        weight: 1
+      - path: Sun
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
