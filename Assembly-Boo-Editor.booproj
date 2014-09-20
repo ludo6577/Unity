@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\RAIN\Editor\ScriptTemplates\ActionTemplate_BOO.boo" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectRingShader.shader" />
+     <None Include="Assets\AI\BehaviorTrees\FishPatrol2..xml" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\VisualSensorRingShader.shader" />

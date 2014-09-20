@@ -36,7 +36,8 @@ public class UnderWater : MonoBehaviour {
 			maxTime = gravity.keys [gravity.length - 1].time;
 			if (timeGravity < maxTime) 
 			{
-				motor.movement.gravity = gravity.Evaluate (timeGravity);
+				//motor.movement.gravity = gravity.Evaluate (timeGravity);
+				Physics.gravity = new Vector3(0f, gravity.Evaluate (timeGravity), 0f);
 				timeGravity += Time.deltaTime;
 			}
 			//Velocity
@@ -45,6 +46,10 @@ public class UnderWater : MonoBehaviour {
 			{
 				motor.movement.velocity.y = velocity.Evaluate (timeVelocity);
 				timeVelocity += Time.deltaTime;
+			}
+			else{
+				timeVelocity = 0;
+				motor.movement.velocity.y = velocity.Evaluate (timeVelocity);
 			}
 		}
 		//Get back to Normal Values

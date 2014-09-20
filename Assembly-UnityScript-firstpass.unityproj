@@ -52,6 +52,7 @@
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" />
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectRingShader.shader" />
+     <None Include="Assets\AI\BehaviorTrees\FishPatrol2..xml" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\VisualSensorRingShader.shader" />

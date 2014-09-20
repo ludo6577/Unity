@@ -11,11 +11,13 @@ public class Spawn : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		GameObject parent = new GameObject ("Clones (" + number + ": " + entity.name + ") ");
 		for (int i=0; i<number; i++) {
 			float x = entity.transform.position.x + (Random.value-0.5f) * rangeX;
 			float y = entity.transform.position.y + (Random.value-0.5f) * rangeY;
 			float z = entity.transform.position.z + (Random.value-0.5f) * rangeZ;
-			Object.Instantiate(entity, new Vector3(x, y , z), new Quaternion());
+			GameObject child = (GameObject)Object.Instantiate(entity, new Vector3(x, y , z), new Quaternion());
+			child.transform.parent = parent.transform;
 		}
 	}
 

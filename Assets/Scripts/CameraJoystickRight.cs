@@ -46,6 +46,9 @@ public class CameraJoystickRight: MonoBehaviour
 
 		characterController.transform.Rotate(new Vector3(0f, totalRotate.y, 0f));
 		mainCamera.transform.Rotate(new Vector3(totalRotate.x, 0f, 0f));
+		//On est aller trop haut ou trop bas
+		if (mainCamera.transform.rotation.x < -0.5f || mainCamera.transform.rotation.x > 0.5f)
+			mainCamera.transform.Rotate (new Vector3(-totalRotate.x, 0f, 0f));
         tweakedLastFrame = false;
     }
 
