@@ -60,18 +60,18 @@ public class SlidersControl : MonoBehaviour {
 
 	private void SliderEnergy_ValueChanged(float val){
 		ecoSystem.Energy = val;
-		//sliderEnergyUI.value = val;
+//		sliderEnergyUI.value = val;
 	}
 	private void SliderFlore_ValueChanged(float val){
 		ecoSystem.Flore = val;
-		//sliderFloreUI.value = val;
+//		sliderFloreUI.value = val;
 	}
 	private void SliderOxygene_ValueChanged(float val){
 		ecoSystem.Oxygene = val;
-		//sliderOxygeneUI.value = val;
+//		sliderOxygeneUI.value = val;
 	}
 	private void SliderWater_ValueChanged(float val){
 		ecoSystem.Water = val;
-		//sliderWaterUI.value = val;
+//		sliderWaterUI.value = val;
 	}
 }
