@@ -72,3 +72,5 @@ Pont		|				mais aggro par des poissons. Buter poissons -> impact ecosysteme
 
 
 Avec ça on devrait avoir une version plutôt cool, et ça laisse de quoi bosser sur les IA pour un dévellopement futur ou d'autres projets (Rain c'est pas si difficile que tu le crois, faut juste apprendre à le dompter). On pourrait faire la suite en travaillant l'autre côté de l'île et arriver avec un jeu d'un peu plus d'une heure de jeu (pour le player qui comprend vite qu'il faut pas trop déconner avec l'ecosystème, les autres). 
+
+Test pull request
