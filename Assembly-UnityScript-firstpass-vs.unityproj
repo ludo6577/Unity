@@ -71,10 +71,10 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="RAIN">
- <HintPath>C:/Users/IAmAGod/Documents/GitHub/Unity/Unity/Assets/RAIN/RAIN.dll</HintPath>
+ <HintPath>C:/Users/Mathieu/Desktop/Github/Unity/Assets/RAIN/RAIN.dll</HintPath>
  </Reference>
  <Reference Include="RAINMetaform">
- <HintPath>C:/Users/IAmAGod/Documents/GitHub/Unity/Unity/Assets/RAIN/RAINMetaform.dll</HintPath>
+ <HintPath>C:/Users/Mathieu/Desktop/Github/Unity/Assets/RAIN/RAINMetaform.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
