@@ -63,6 +63,7 @@
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
+     <None Include="Assets\SFX\FootstepsSoundsCarpetPack\FootstepsSoundsCarpetPackInfo.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Mathieu/Desktop/Github/Unity/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

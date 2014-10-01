@@ -5,6 +5,13 @@
 Feltz Ludovic, 
 Genoud Mathieu
 
+Avec des assets gratuits de : 
+http://unity3d.com/
+http://rivaltheory.com/rain/
+https://www.facebook.com/pages/Laali-Unit/257947474377347
+http://www.jpneufeld.com/
+http://www.profidevelopers.com/
+http://electrodynamicsproductions.blogspot.ca/
 
 TODO: Mettre les idées ici !
 
