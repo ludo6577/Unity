@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\tiledAnims.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\IA devs\Assets\BugSpawn.cs">
     <Files>
-      <File FileName="Assets\Scripts\tiledAnims.cs" Line="36" Column="46" />
-      <File FileName="Assets\Scripts\AnimateTiledTexture.cs" Line="14" Column="21" />
+      <File FileName="..\IA devs\Assets\BugSpawn.cs" Line="15" Column="17" />
+      <File FileName="..\IA devs\Assets\Player.cs" Line="19" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
