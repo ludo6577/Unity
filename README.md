@@ -22,8 +22,9 @@ The Gimp 2.8		http://www.gimp.org/downloads/
 Photoshop Elements 8.0 (Licensed version)
 Rain 2.1		http://rivaltheory.com/rain/download/ (also availlable in Unity's Assets Store)
 
-SEE : ScreenShot.bmp (can be improved)
+SEE : ScreenShot.bmp (root folder, can be improved)
 SEE : Game design project for first public build below
+SEE : Mind Plan.jpg (root folder, can be improved)
 
 TODO: 
 
@@ -105,16 +106,16 @@ On va donc ajouter une "proto-mecanique" de la faune dans ce jeu d'aventure. Dan
 This is how I Zoned our map on paper (seel also ScreenShot.bmp), and here there's the choices that the player encounters.
 
 
-Beach 					  ----    Killing tame fishes ->  ecosystem variation
-  |
-PeakView 				  ----  A tame snake kills one or more tame bugs -> ecosystem variation
+	Beach 				  ----    Killing tame fishes ->  ecosystem variation
+ 	 |
+      PeakView 	 			  ----  A tame snake kills one or more tame bugs -> ecosystem variation
   |		|				Player kills the snake and/or bugs -> ecosystem variation
   |             |
   |      (Passage of the Damned)	  ---- Shortway to Hope Crest, where the playe encounters 
   |						an enemy(type=random and ecosystem) too strong for low-level player
   |						(but not impossible)
   |
-Willows				  	  ----  Going by the bridge and being detected by wild Mammal or
+      Willows			  	  ----  Going by the bridge and being detected by wild Mammal or
   |             |				going by the lake and being attacked by wild Fishes 
   |		|				-> kiling fishes -> ecosystem variation
   |	      	|
@@ -135,6 +136,6 @@ Pont		|				but being attacked by fishes. Kiling fishes -> Ecosystem variation
    Hope Crest  			  	  ----- Enemy-free zone before "middleway challenge" 
 	|					2 ways to come from : "Passage of the damned" or "Forest Passage")
 	|
-  "middleway challenge" 		  ----- A "Final Boss" (determined by LVL player and Ecosystem, should be strong)
+  "middleway challenge" 		  ----- A "Final Boss" (Force determined by LVL player and Type Determined by         |					Ecosystem, must be strong)
 	|
    Secret way to the Peak where a bonus life awaits the player.
