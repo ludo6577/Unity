@@ -1,11 +1,13 @@
 ﻿EcoSystem
 =====
+Look at this file wih the notepad ! Should be way more readable !
 
 ©
 Feltz Ludovic, 
 Genoud Mathieu
 
-Avec des assets gratuits de : 
+Including free assets from : 
+
 http://unity3d.com/
 http://rivaltheory.com/rain/
 https://www.facebook.com/pages/Laali-Unit/257947474377347
@@ -13,28 +15,82 @@ http://www.jpneufeld.com/
 http://www.profidevelopers.com/
 http://electrodynamicsproductions.blogspot.ca/
 
-TODO: Mettre les idées ici !
+Software versions : 
+Unity 4.6		http://unity3d.com/unity/beta/4.6
+Blender 2.71		http://www.blender.org/download/
+The Gimp 2.8		http://www.gimp.org/downloads/
+Photoshop Elements 8.0 (Licensed version)
+Rain 2.1		http://rivaltheory.com/rain/download/ (also availlable in Unity's Assets Store)
+
+SEE : ScreenShot.bmp (can be improved)
+SEE : Game design project for first public build below
+
+TODO: 
+
+Development : 
+
+-A fighting system
+	-Developping AIs (using Rain or not)
+		- Animals have 2 classes : Wild and Tame
+		- Exept for the tame snake, wich attacks and then flees, tame animals only flee on sight/damage receive
+		- You can be creative on the behaviors you want to create, but they must be accurate with their 				   animations
+	-Developping the player's fighting system
+		-Adding an "attack" button wich runs hit2.cs
+		-Creating a real-time rpg-like combat system with XP, damages and life for both animals and player
+		(see the game design proposition below)
+
+-The environment control
+	-the environmental visual feedback can be improved
+	-the "flore" visual feedback needs to be done or adaptated (see : EnvironmentControl.cs)
+
+-Spawning system
+	-Developping it ! The spawning system should be : 
+		-zoned (for it to load when the player crosses some triggers)
+		-determined by Ecosystem values for types and wilderness
+- (to be continued)
 
 
-TALK:
+Graphics :
 
-		--------
+(see root folder/Models - WIP/*.blend  - Look into the layers and find three animals type : Layer 1 is Wild, 2 is Neutral, 3 is Tame. At the moment we do not use a "neutral" class, so "Tame Fish" is the "Neutral Fish", "Tame Bug" is the "Tame Bug", "Tame Snake" is the "Neutral Snake" and the Mammals needs to be modelled
+see the mess with my textures in >Root folder/Models - WIP/Textures - WIP and hires/*.XCF, *.PSD, *.PNG, *.TIF and *.JPG)
 
-MattGen : Je-viens-de-voir-cette-update-jai-fait-quelques-modifs-aprs-fais-gaffe-aux-conflits-si-tu-bosses-la.tu-peux-garder-ma-modif-du-terrain-c'est-juste-un-ajustement-des-textures-qui-bugaient-sur-le-droide.Jai-ajouté-mes-icones-sur-le-slider,-delocké-l'environnement,-desactivé-le-script-hit.cs-et-changé-ma-texture-de-flotte-qui-bugait-sur-android.Toujours-pas-de-clavier-propre,-je-fais-un-joli-TODO-demain.
+-Modelling
+	-Tame and Wild Mammal
+	-High polygons for texturing
+		-Tame Mammal
+		-Wild Mammal
+		-Tame Bug
+		-Wild Bug
+		-Tame Snake
 
-		--------
+-Texturing
+	-Normal maps
+		-Tame Snake
+		-Tame Bug
+		-Wild Bug
+		-Tame Mammal
+		-Wild Mammal
+	
+	-Color maps
+		-Tame Snake
+		-Tame Bug
+		-Wild Bug
+		-Tame Mammal
+		-Wild Mammal
 
-ludo6577 : ok comme tu peut le voir je suit toujours les updates ! si jamais tu fais des modifs je le verrai tkt
+-Animating
+	-Review Wild Snake's animation
+	-Tame Snake
+	-Tame Bug (erratic, "vibrates" when fears)
+	-Wild bug (spider)
+	-Tame Mammal
+	-Wild Mammal
 
-		--------
 
-MattGen : Bon va falloir que je me fasse à Tortoise... J'ai pas fait de connerie là ?
+Game Design Project for first "really public" build :
 
-Bon, le topo, un ToDo propre attendra encore un peu. 
-On a donc un monde défini et une mécanique de base que l'on va exploiter sommairement dans un micro-jeu d'aventure. On est d'accord ?
-
-Disons que oui : 
-
+/* This part is still in French
 Nomenclature : 
 Type = Poisson, Reptile, Insecte, Mammifère
 Force = Puissance Attaque
@@ -44,40 +100,41 @@ lvlPlayer = Progression à définir
 Note : Tous les animaux présents sur la map telle que décrite ci-après n'ont pas forcément de Spawn, certains sont définis (comme le serpent de PeakView qui reste seul)
 
 On va donc ajouter une "proto-mecanique" de la faune dans ce jeu d'aventure. Dans chaque zone (j'en ai défini 12 sur la partie de la map déjà faite) le joueur sera face à un choix à faire (plus ou moins explicite) et ces choix lui feront ou non tuer les animaux qu'il croise, provoquant un impact sur l'ecosystème qui lui-même impactera certaines variables des ennemis( ex : nbr Spawn, Force, ... genre de détails sur lesquels ils nous faudra de nouvelles mises au points "en live"). Me dit pas tout de suite : "mais ca va être trop la merde les IA et tout" (c'est pas productif merde :p ), ça je m'en charge, lis juste mon concept et dis moi si tu approuve l'idée en général.
+*/
 
-Voici comment j'ai "zoné" sur papier notre map, avec en bonus les choix qui s'y déroulent.
-Voir ScreenShot.bmp pour mieux associer ma map en txt à la map réelle.
+This is how I Zoned our map on paper (seel also ScreenShot.bmp), and here there's the choices that the player encounters.
 
-Plage  					  ----    Buter d'innofensifs poissons -> Impact ecosysteme
+
+Beach 					  ----    Killing tame fishes ->  ecosystem variation
   |
-PeakView(la plaine juste après la plage)  ----  Un serpent butte un ou des insectes -> Impact ecosysteme
-  |		|				Le joueur butte le serpent et/ou les insectes -> Impact ecosysteme
+PeakView 				  ----  A tame snake kills one or more tame bugs -> ecosystem variation
+  |		|				Player kills the snake and/or bugs -> ecosystem variation
   |             |
-  |      Passage des Bannis 		  ---- Raccourci vers crête espoir, après un ennemi(type=random et ecosystem) 
-  |						trop fort pour les bas lvl (mais pas impossible)
+  |      (Passage of the Damned)	  ---- Shortway to Hope Crest, where the playe encounters 
+  |						an enemy(type=random and ecosystem) too strong for low-level player
+  |						(but not impossible)
   |
-Saules(là où il y a des saules)  	  ----  Passer par le pont et détection par mammifère ou  
-  |             |				le lac et aggro par des poissons -> buter des poissons = impact ecosysteme
+Willows				  	  ----  Going by the bridge and being detected by wild Mammal or
+  |             |				going by the lake and being attacked by wild Fishes 
+  |		|				-> kiling fishes -> ecosystem variation
   |	      	|
-  |	       Lac  			  ---- Permet d'éviter détection mammifère (pas exclusif) 
-Pont		|				mais aggro par des poissons. Buter poissons -> impact ecosysteme
+  |	       Lake  			  ---- Useful for avoiding the Mammal detection (not exclusive) 
+Pont		|				but being attacked by fishes. Kiling fishes -> Ecosystem variation
   |		|
-    Labyrinthe     			  ---- Si Précedemment détecté : embuscade par des mammifères.
-        |					 buter mammifère -> impact ecosysteme
+       Maze     			  ---- if previously detected : Wild Mammals embush.
+        |					 killing mammals -> ecosystem variation
 	|
-     Serpents  				  ---- Des serpents trainent dans hautes herbes et 
-	|					attaquent Player qui s'en approche. Buter serpents -> impact ecosysteme
+     Snakes  				  ---- Wild Snakes attacks from within the grass 
+	|					Attacks player that make a close encounter.
+	|					-> Killing Snakes -> ecosystem variation
+	|					
+  Forest Passage  			  ---- Where the Static Batching lacks  -- awaiting more AI developments,
+	|					 Animals here should have a more natural behavior. 
+						Killing them -> ecosystem variation
 	|
-  Passe Forestière  			  ---- La zone qui rame à mort  -- ici bordel d'animaux,
-	|					 en attendant de bien gérer les IA ils seront tous innofensifs. En buter -> Impact Ecosysteme
+   Hope Crest  			  	  ----- Enemy-free zone before "middleway challenge" 
+	|					2 ways to come from : "Passage of the damned" or "Forest Passage")
 	|
-   Crête de l'espoir  			  ----- Le calme avant "Defi Interm." Arrivée depuis Passe Forestière ou Passage des Bannis
+  "middleway challenge" 		  ----- A "Final Boss" (determined by LVL player and Ecosystem, should be strong)
 	|
-  "Defi interm." 			  ----- Un "Boss de fin" au pied du pic dont le type est défini par ecosysteme et la force par lvlPlayer
-	|
-   Passage secret vers le Pic ou attend une vie bonus
-
-
-Avec ça on devrait avoir une version plutôt cool, et ça laisse de quoi bosser sur les IA pour un dévellopement futur ou d'autres projets (Rain c'est pas si difficile que tu le crois, faut juste apprendre à le dompter). On pourrait faire la suite en travaillant l'autre côté de l'île et arriver avec un jeu d'un peu plus d'une heure de jeu (pour le player qui comprend vite qu'il faut pas trop déconner avec l'ecosystème, les autres). 
-
-Test pull request
+   Secret way to the Peak where a bonus life awaits the player.
