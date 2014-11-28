@@ -1,0 +1,11 @@
+C:\DEV\PERSO\Unity\Graph\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
+C:\DEV\PERSO\Unity\Graph\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\DEV\PERSO\Unity\Graph\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\DEV\PERSO\Unity\Graph\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\DEV\PERSO\Unity\Graph\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\DEV\PERSO\Unity\Graph\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\DEV\PERSO\Unity\Graph\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\DEV\PERSO\Unity\Graph\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\DEV\PERSO\Unity\Graph\obj\Debug\UnityVS.Graph.CSharp.Plugins.csprojResolveAssemblyReference.cache
+C:\DEV\PERSO\Unity\Graph\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\DEV\PERSO\Unity\Graph\obj\Debug\Assembly-CSharp-firstpass.pdb
