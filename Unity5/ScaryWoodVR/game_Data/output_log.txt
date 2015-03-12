@@ -1,0 +1,27 @@
+Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 8790M (ID=0x6606)
+    Vendor:   ATI
+    VRAM:     2023 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\DEV\PERSO\Unity\Unity5\New Unity Project 1\game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\DEV\PERSO\Unity\Unity5\New Unity Project 1\game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\DEV\PERSO\Unity\Unity5\New Unity Project 1\game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\DEV\PERSO\Unity\Unity5\New Unity Project 1\game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\DEV\PERSO\Unity\Unity5\New Unity Project 1\game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\DEV\PERSO\Unity\Unity5\New Unity Project 1\game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\DEV\PERSO\Unity\Unity5\New Unity Project 1\game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\DEV\PERSO\Unity\Unity5\New Unity Project 1\game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.069 seconds
+desktop: 1920x1080 60Hz; virtual: 4320x1350 at -2400,0
+<RI> Initializing input.
+XInput1_3.dll not found.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\DEV\PERSO\Unity\Unity5\New Unity Project 1\game_Data\Managed\System.Core.dll (this message is harmless)
+Shader 'Nature/Terrain/Standard': dependency 'BaseMapShader' shader 'Hidden/TerrainEngine/Splatmap/Standard-Base' not found
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 24d0 -> priority: 1 
+  Thread -> id: 4944 -> priority: 1 
